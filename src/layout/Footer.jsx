@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { NavLink } from 'react-router-dom';
 
 class Footer extends Component {
 
@@ -22,19 +23,19 @@ class Footer extends Component {
                         <div className="footer__option__item">
                             <h5>Who we are</h5>
                             <ul>
-                                <li><a href="#">Team</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer__option__item">
                             <h5>Our work</h5>
                             <ul>
-                                <li><a href="#">Feature</a></li>
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Browse Archive</a></li>
-                                <li><a href="#">Video for web</a></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/about">About</NavLink></li>
                             </ul>
                         </div>
                     </div>
@@ -44,7 +45,7 @@ class Footer extends Component {
                                 document.write(new Date().getFullYear());
                             </script>
                             All rights reserved | This template is made with <i className="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                aria-hidden="true"></i> by Colorlib
                         </p>
                     </div>
                 </div>

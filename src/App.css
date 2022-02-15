@@ -1227,10 +1227,14 @@ ol {
   Testimonial
 -----------------------*/
 .testimonial {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
-.testimonial__slider.owl-carousel .owl-item .col-lg-4 {
+.testimonial .swiper {
+  padding-bottom: 30px;
+}
+
+/* .testimonial__slider.owl-carousel .owl-item .col-lg-4 {
   max-width: 100%;
 }
 .testimonial__slider.owl-carousel .owl-dots {
@@ -1249,7 +1253,7 @@ ol {
 }
 .testimonial__slider.owl-carousel .owl-dots button:last-child {
   margin-right: 0;
-}
+} */
 
 .testimonial__text {
   padding: 30px 40px 25px 30px;

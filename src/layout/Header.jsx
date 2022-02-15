@@ -1,6 +1,14 @@
 import { Component } from "react";
+import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
+
+  componentDidMount() {
+      // document.getElementById("preloder").style.opacity = "0";
+      // setTimeout(() => {
+      //   document.querySelector(".loader").style.opacity = "0";  
+      // }, 200);
+  }
 
   render() {
 
@@ -13,19 +21,19 @@ class Header extends Component {
         <header className="header">
             <div className="header-inner inner">
                 <div className="header__logo">
-                    <a href="./index.html">
+                    <a href="/">
                       <img src="/assets/img/logo.png" alt="" />
                     </a>
                 </div>
                 <div className="header__nav__option">
                     <nav className="header__nav__menu mobile-menu">
                         <ul>
-                            <li className="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./about.html">About</a></li>
-                            <li><a href="./portfolio.html">Portfolio</a></li>
-                            <li><a href="./services.html">Services</a></li>
-                            <li><a href="./history">History</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li className="active"><NavLink to="/">Home</NavLink></li>
+                            <li><NavLink to="/about">About</NavLink></li>
+                            <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                            <li><NavLink to="/services">Services</NavLink></li>
+                            <li><NavLink to="/history">History</NavLink></li>
+                            <li><NavLink to="/contact">Contact</NavLink></li>
                         </ul>
                     </nav>
                 </div>

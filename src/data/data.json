@@ -29,42 +29,42 @@
         {
             "id": "1",
             "label": "javascript",
-            "number": "95"
+            "percentage": "95"
         },
         {
             "id": "2",
             "label": "php",
-            "number": "90"
+            "percentage": "90"
         },
         {
             "id": "3",
             "label": "python",
-            "number": "85"
+            "percentage": "85"
         },
         {
             "id": "4",
             "label": "solidity",
-            "number": "90"
+            "percentage": "90"
         },
         {
             "id": "5",
             "label": "rust",
-            "number": "85"
+            "percentage": "85"
         },
         {
             "id": "6",
             "label": "react",
-            "number": "90"
+            "percentage": "90"
         },
         {
             "id": "7",
             "label": "vue",
-            "number": "85"
+            "percentage": "85"
         },
         {
             "id": "8",
             "label": "ethereum",
-            "number": "85"
+            "percentage": "85"
         }
     ]
 }
