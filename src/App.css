@@ -1476,6 +1476,7 @@ ol {
   display: inline-block;
   cursor: pointer;
   padding: 6px 22px;
+  border: 1px solid transparent;
 }
 .portfolio__filter li.active {
   border: 1px solid #00bfe7;

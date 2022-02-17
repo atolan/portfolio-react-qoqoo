@@ -18,9 +18,14 @@ const Portfolio = () => {
         });
     });
 
-    const filterPortfolio = (keyword) => {
-        
+    const filterPortfolio = (e, keyword) => {
+        document.querySelector('.portfolio__filter .active').classList.remove('active');
+        e.target.classList.add('active');
     }
+
+    // const filterPortfolio =(keyword) => (e) => {
+    //     console.log(keyword)
+    // }
 
     return(
         <>
@@ -31,12 +36,13 @@ const Portfolio = () => {
             <section className="portfolio spad">
                 <div className="portfolio-inner inner">
                     <ul className="portfolio__filter">
-                        <li className="active" data-filter="*" onClick={ (e) => this.filterPortfolio('all') }>All</li>
-                        <li data-filter=".branding" onClick={ (e) => this.filterPortfolio('branding') }>Branding</li>
-                        <li data-filter=".digital-marketing" onClick={ (e) => this.filterPortfolio('digital-marketing') }>Digital marketing</li>
-                        <li data-filter=".web" onClick={ (e) => this.filterPortfolio('web') }>Web</li>
-                        <li data-filter=".photography" onClick={ (e) => this.filterPortfolio('photography') }>Photography</li>
-                        <li data-filter=" .ecommerce" onClick={ (e) => this.filterPortfolio('ecommerce') }>eCommerce</li>
+                        <li className="active" data-filter="*" onClick={(e) => { filterPortfolio(e, 'all') } }>All</li>
+                        {/* <li data-filter=".branding" onClick={ filterPortfolio('branding') }>Branding</li> */}
+                        <li data-filter=".branding" onClick={(e) => { filterPortfolio(e, 'branding') } }>Branding</li>
+                        <li data-filter=".digital-marketing" onClick={(e) => { filterPortfolio(e, 'digital-marketing') } }>Digital marketing</li>
+                        <li data-filter=".web" onClick={(e) => { filterPortfolio(e, 'web') } }>Web</li>
+                        <li data-filter=".photography" onClick={(e) => { filterPortfolio(e, 'photography') } }>Photography</li>
+                        <li data-filter=" .ecommerce" onClick={(e) => { filterPortfolio(e, 'ecommerce') } }>eCommerce</li>
                     </ul>
                     <div className="portfolio__gallery">
                         <div className="mix branding">
