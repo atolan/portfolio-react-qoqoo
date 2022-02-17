@@ -1432,9 +1432,10 @@ ol {
   padding: 100px 20px;
 }
 
-.logo__carousel.owl-carousel .owl-item img {
+.logo__carousel .logo__item img {
   width: auto;
-  display: inline-block;
+  display: block;
+  margin: auto;
 }
 
 /*---------------------
