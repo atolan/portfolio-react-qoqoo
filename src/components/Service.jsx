@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../layout/Header';
+
 import Footer from '../layout/Footer';
 import Breadcrumb from '../layout/Breadcrumb';
 
@@ -17,7 +17,7 @@ class Service extends React.Component {
 
         return(
             <>
-                <Header></Header>
+               
                 <Breadcrumb label="My Services" pageTitle="Service"></Breadcrumb>
                 <section className="services spad">
                     <div className="spad-inner inner">

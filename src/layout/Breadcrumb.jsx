@@ -15,7 +15,7 @@ const Breadcrumb = (props) => {
             <div className="breadcrumb__text">
                 <h2>{ props.label }</h2>
                 <div className="breadcrumb__links">
-                    <a href="#">Home</a>
+                    <a href="/">Home</a>
                     <span>{ props.pageTitle }</span>
                 </div>
             </div>

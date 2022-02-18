@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
 import Breadcrumb from '../layout/Breadcrumb';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -29,7 +27,7 @@ const Portfolio = () => {
 
     return(
         <>
-            <Header />
+            {/* <Header /> */}
 
             <Breadcrumb label="Portfolio" pageTitle="Portfolio"/>
 
@@ -162,8 +160,6 @@ const Portfolio = () => {
                     </div>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }

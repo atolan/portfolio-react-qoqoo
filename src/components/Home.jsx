@@ -1,6 +1,4 @@
 import { Component } from "react";
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
 import Count from './Count';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -32,7 +30,7 @@ class Home extends Component {
     {
         return(
             <>
-                <Header />
+                {/* <Header /> */}
                 <main>
                     {/* <!-- Hero Section Begin --> */}
                     <section className="hero">
@@ -53,7 +51,7 @@ class Home extends Component {
                                         <div className="hero__text">
                                             <span>For Website and Web System</span>
                                             <h2>Fullstack Developer’s Portfolio</h2>
-                                            <a href="#" className="primary-btn">See more about me</a>
+                                            <a href="/about" className="primary-btn">See more about me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -64,7 +62,7 @@ class Home extends Component {
                                         <div className="hero__text">
                                             <span>For Dapps and NFT release</span>
                                             <h2>Blockchain Developer’s Portfolio</h2>
-                                            <a href="#" className="primary-btn">See more about me</a>
+                                            <a href="/about" className="primary-btn">See more about me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -75,7 +73,7 @@ class Home extends Component {
                                         <div className="hero__text">
                                             <span>For Unity and NFT Game</span>
                                             <h2>Unity Game Developer’s Porfolio</h2>
-                                            <a href="#" className="primary-btn">See more about me</a>
+                                            <a href="/about" className="primary-btn">See more about me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -239,7 +237,6 @@ class Home extends Component {
                     </section>
                     {/* <!-- Call To Action Section End --> */}
                 </main>
-                <Footer />
             </>
         )
     }

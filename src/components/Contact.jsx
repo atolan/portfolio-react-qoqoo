@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
 import Breadcrumb from '../layout/Breadcrumb';
 
 
@@ -16,11 +14,29 @@ class Contact extends React.Component {
         }
     }
 
+    handleChange = (fieldName) => e => {
+        this.setState({
+            [fieldName]: e.target.value
+        });
+    }
+
+    handleSumit = e => {
+        e.preventDefault();
+        const {name, email, message} = this.state;
+        alert('Something went wrong, please try again later');
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
+    }
+
     render() {
+
+        const {name, email, message} = this.state;
+
         return(
             <>
-                <Header />
-    
                 <Breadcrumb label="Contact Me" pageTitle="Contact"/>
     
                 <section className="contact-widget spad">
@@ -28,33 +44,33 @@ class Contact extends React.Component {
                         <div className="contact-item">
                             <div className="contact__widget__item">
                                 <div className="contact__widget__item__icon">
-                                    <i className="fa fa-map-marker"></i>
-                                </div>
-                                <div className="contact__widget__item__text">
-                                    <h4>Address</h4>
-                                    <p>Los Angeles Gournadi, 1230 Bariasl</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contact-item">
-                            <div className="contact__widget__item">
-                                <div className="contact__widget__item__icon">
-                                    <i className="fa fa-phone"></i>
-                                </div>
-                                <div className="contact__widget__item__text">
-                                    <h4>Hotline</h4>
-                                    <p>1-677-124-44227 • 1-688-356-66889</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="contact-item">
-                            <div className="contact__widget__item">
-                                <div className="contact__widget__item__icon">
-                                    <i className="fa fa-map-marker"></i>
+                                    <img src="/assets/img/icons/email.png" alt="" />
                                 </div>
                                 <div className="contact__widget__item__text">
                                     <h4>Email</h4>
-                                    <p>Support@gmail.com</p>
+                                    <a href="mailto:kself651120@gmail.com">kself651120@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contact-item">
+                            <div className="contact__widget__item">
+                                <div className="contact__widget__item__icon">
+                                    <img src="/assets/img/icons/skype.png" alt="" />
+                                </div>
+                                <div className="contact__widget__item__text">
+                                    <h4>Skype ID</h4>
+                                    <a href="skype:live:.cid.bbb9b9699ea43b9c">skype:live:.cid.bbb9b9699ea43b9c</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="contact-item">
+                            <div className="contact__widget__item">
+                                <div className="contact__widget__item__icon">
+                                    <img src="/assets/img/icons/telegram.png" alt="" />
+                                </div>
+                                <div className="contact__widget__item__text">
+                                    <h4>Telegram</h4>
+                                    <a href="https://t.me/atolan1216">@atolan1216</a>
                                 </div>
                             </div>
                         </div>
@@ -66,16 +82,14 @@ class Contact extends React.Component {
                         <div className="contact__form">
                             <h3>Get in touch</h3>
                             <form action="#">
-                                <input type="text" placeholder="Name" />
-                                <input type="text" placeholder="Email" />
-                                <textarea placeholder="Message"></textarea>
-                                <button type="submit" className="site-btn">Send Message</button>
+                                <input type="text" value={name} onChange={this.handleChange("name")} placeholder="Name" />
+                                <input type="text" value={email} onChange={this.handleChange("email")} placeholder="Email" />
+                                <textarea placeholder="Message" value={message} onChange={this.handleChange("message")}></textarea>
+                                <button type="submit" onClick={this.handleSumit} className="site-btn">Send Message</button>
                             </form>
                         </div>
                     </div>
                 </section>
-    
-                <Footer />
             </>
         )   
     }

@@ -2,6 +2,10 @@ import { Component } from "react";
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
+  constructor(props){
+    super(props);
+    this.state={tab:1}
+  }
 
   componentDidMount() {
       // document.getElementById("preloder").style.opacity = "0";
@@ -28,12 +32,12 @@ class Header extends Component {
                 <div className="header__nav__option">
                     <nav className="header__nav__menu mobile-menu">
                         <ul>
-                            <li className="active"><NavLink to="/">Home</NavLink></li>
-                            <li><NavLink to="/about">About</NavLink></li>
-                            <li><NavLink to="/portfolio">Portfolio</NavLink></li>
-                            <li><NavLink to="/service">Services</NavLink></li>
-                            <li><NavLink to="/history">History</NavLink></li>
-                            <li><NavLink to="/contact">Contact</NavLink></li>
+                            <li className={this.state.tab==1?"active":""}><NavLink to="/"  onClick={()=>{this.setState({tab:1})}}>Home</NavLink></li>
+                            <li className={this.state.tab==2?"active":""} ><NavLink onClick={()=>{this.setState({tab:2})}} to="/about">About</NavLink></li>
+                            <li className={this.state.tab==3?"active":""} ><NavLink onClick={()=>{this.setState({tab:3})}} to="/portfolio">Portfolio</NavLink></li>
+                            <li className={this.state.tab==4?"active":""} ><NavLink onClick={()=>{this.setState({tab:4})}} to="/service">Services</NavLink></li>
+                            <li className={this.state.tab==5?"active":""} ><NavLink onClick={()=>{this.setState({tab:5})}} to="/history">History</NavLink></li>
+                            <li className={this.state.tab==6?"active":""} ><NavLink onClick={()=>{this.setState({tab:6})}} to="/contact">Contact</NavLink></li>
                         </ul>
                     </nav>
                 </div>

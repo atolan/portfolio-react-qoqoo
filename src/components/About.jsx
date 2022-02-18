@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import Header from '../layout/Header';
-import Footer from '../layout/Footer';
 import Breadcrumb from '../layout/Breadcrumb';
 
 import data from '../data/data.json';
@@ -22,8 +20,6 @@ const About = () => {
 
     return(
         <>
-            <Header />
-
             <Breadcrumb label="About Me" pageTitle="About"/>
 
             <section className="about spad">
@@ -215,8 +211,6 @@ const About = () => {
                     </Swiper>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }
