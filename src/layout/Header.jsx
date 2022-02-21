@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { NavLink } from 'react-router-dom';
+import $ from 'jquery';
 
 class Header extends Component {
   constructor(props){
@@ -7,12 +8,10 @@ class Header extends Component {
     this.state={tab:1}
   }
 
-  componentDidMount() {
-      // document.getElementById("preloder").style.opacity = "0";
-      // setTimeout(() => {
-      //   document.querySelector(".loader").style.opacity = "0";  
-      // }, 200);
-  }
+  // componentDidMount() {
+  //   $(".loader").fadeOut();
+  //   $("#preloder").delay(200).fadeOut("slow");
+  // }
 
   render() {
 

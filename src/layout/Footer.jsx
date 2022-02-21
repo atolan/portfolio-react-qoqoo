@@ -10,7 +10,7 @@ class Footer extends Component {
                 <div className="footer-inner inner">
                     <div className="footer__top">
                         <div className="footer__top__logo">
-                            <a href="#"><img src="assets/img/logo.png" alt="" /></a>
+                            <a href="/"><img src="assets/img/logo.png" alt="" /></a>
                         </div>
                     </div>
                     <div className="footer__option">
@@ -24,18 +24,17 @@ class Footer extends Component {
                             <h5>Who we are</h5>
                             <ul>
                                 <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
+                                <li><NavLink to="/service">Services</NavLink></li>
+                                <li><NavLink to="/history">History</NavLink></li>
                             </ul>
                         </div>
                         <div className="footer__option__item">
                             <h5>Our work</h5>
                             <ul>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/about">About</NavLink></li>
+                                <li><NavLink to="/contact">Contact</NavLink></li>
+                                <li><a href="https://github.com/atolan" target="_blank">GitHub</a></li>
+                                
                             </ul>
                         </div>
                     </div>
