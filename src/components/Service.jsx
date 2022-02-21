@@ -129,7 +129,7 @@ class Service extends React.Component {
                         </Swiper>
                     </div>
                 </div>
-                <Footer></Footer>
+                
             </>
         )
     }
