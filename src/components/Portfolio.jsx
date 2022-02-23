@@ -42,10 +42,10 @@ const Portfolio = () => {
                     <ul className="portfolio__filter">
                         <li className="active" data-filter="*" onClick={(e) => { filterPortfolio(e, '') } }>All</li>
                         {/* <li data-filter=".branding" onClick={ filterPortfolio('branding') }>Branding</li> */}
-                        <li data-filter=".branding" onClick={(e) => { filterPortfolio(e, 'branding') } }>Branding</li>
-                        <li data-filter=".digital-marketing" onClick={(e) => { filterPortfolio(e, 'digital') } }>Digital marketing</li>
+                        <li data-filter=".branding" onClick={(e) => { filterPortfolio(e, 'nftgame') } }>NFT Game</li>
+                        <li data-filter=".digital-marketing" onClick={(e) => { filterPortfolio(e, 'smartcontract') } }>Smart Contract</li>
                         <li data-filter=".web" onClick={(e) => { filterPortfolio(e, 'web') } }>Web</li>
-                        <li data-filter=".photography" onClick={(e) => { filterPortfolio(e, 'photography') } }>Photography</li>
+                        <li data-filter=".photography" onClick={(e) => { filterPortfolio(e, 'system') } }>Photography</li>
                         <li data-filter=" .ecommerce" onClick={(e) => { filterPortfolio(e, 'ecommerce') } }>eCommerce</li>
                     </ul>
                     <div className="portfolio__gallery">
@@ -54,16 +54,19 @@ const Portfolio = () => {
                                 .filter(portfolio => (portfolio.type === ptype) || (ptype ==="") )
                                 .map(portfolio => {
                                     return(
-                                        <div key={portfolio.id}>
+                                        <div key={portfolio.id} className="mix">
                                             <div className="portfolio__item">
-                                                <div className="portfolio__item__video set-bg" data-setbg={`/assets/img/portfolio/${ portfolio.img }`}>
-                                                </div>
-                                                <div className="portfolio__item__text">
-                                                    <h4>{ portfolio.title }</h4>
-                                                    <ul>
-                                                        <li>{portfolio.stacks}</li>
-                                                    </ul>
-                                                </div>
+                                                <a href={ portfolio.link } target="_blank">
+                                                    <div className="portfolio__item__video set-bg" data-setbg={`/assets/img/portfolio/${ portfolio.img }`}>
+                                                    {/* <div className="portfolio__item__video set-bg" data-setbg={`/assets/img/portfolio/${ portfolio.img }`}> */}
+                                                    </div>
+                                                    <div className="portfolio__item__text">
+                                                        <h4>{ portfolio.title }</h4>
+                                                        <ul>
+                                                            <li>{portfolio.stacks}</li>
+                                                        </ul>
+                                                    </div>
+                                                </a>
                                             </div>
                                         </div>
                                     )

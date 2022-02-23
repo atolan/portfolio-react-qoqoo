@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
@@ -7,6 +8,12 @@ class Header extends Component {
     super(props);
     this.state={tab:1}
   }
+
+  // const counter = useSelector((state) => state.counter.count)
+  // const dispatch = useDispatch()
+  // For Example:
+  // const increment = () => dispatch(actions.increment())
+  // ...
 
   // componentDidMount() {
   //   $(".loader").fadeOut();

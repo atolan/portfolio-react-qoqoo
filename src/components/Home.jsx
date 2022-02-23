@@ -46,7 +46,7 @@ class Home extends Component {
                             onSwiper={(swiper) => console.log(swiper)}
                             >
                             <SwiperSlide>
-                                <div className="hero__item set-bg" data-setbg="/assets/img/hero/hero-1.jpg">
+                                <div className="hero__item set-bg" data-setbg="/assets/img/hero/hero01.png">
                                     <div className="hero-box inner">
                                         <div className="hero__text">
                                             <span>For Website and Web System</span>
@@ -57,7 +57,7 @@ class Home extends Component {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="hero__item set-bg" data-setbg="/assets/img/hero/hero-1.jpg">
+                                <div className="hero__item set-bg" data-setbg="/assets/img/hero/hero02.png">
                                     <div className="hero-box inner">
                                         <div className="hero__text">
                                             <span>For Dapps and NFT release</span>
@@ -68,7 +68,7 @@ class Home extends Component {
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="hero__item set-bg" data-setbg="/assets/img/hero/hero-1.jpg">
+                                <div className="hero__item set-bg" data-setbg="/assets/img/hero/hero03.png">
                                     <div className="hero-box inner">
                                         <div className="hero__text">
                                             <span>For Unity and NFT Game</span>

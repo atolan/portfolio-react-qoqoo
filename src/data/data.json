@@ -69,74 +69,324 @@
     ],
     "portfolios": [
         {
+            "id": "0",
+            "title": "Pagasus galaxy game",
+            "type": "web",
+            "stacks": "Vue, Nuxt, Node.js, Gsap, Amazon S3",
+            "img": "web00.png",
+            "link": "https://snaq.me/"
+        },
+        {
             "id": "1",
-            "title": "VIP Auto Tires & Service",
-            "type": "branding",
-            "stacks": "Magento",
-            "img": "portfolio-1.jpg"
+            "title": "Pagasus galaxy game",
+            "type": "nftgame",
+            "stacks": "Polygon, Solidity, Web3.js",
+            "img": "nft01.png",
+            "link": "https://pegaxy.io/"
         },
         {
             "id": "2",
-            "title": "VIP Auto Tires & Service",
-            "type": "digital",
-            "stacks": "Magento",
-            "img": "portfolio-2.jpg"
+            "title": "fantasy game ",
+            "type": "nftgame",
+            "stacks": "Ethreum, Rust, React",
+            "img": "nft02.png",
+            "link": "https://nine-chronicles.com/"
         },
         {
             "id": "3",
-            "title": "VIP Auto Tires & Service",
-            "type": "branding",
-            "stacks": "Magento",
-            "img": "portfolio-3.jpg"
+            "title": "blankos block party game",
+            "type": "nftgame",
+            "stacks": "React, Next.js, Node.js",
+            "img": "nft03.png",
+            "link": "https://blankos.com/"
         },
         {
             "id": "4",
-            "title": "VIP Auto Tires & Service",
-            "type": "digital",
-            "stacks": "Magento",
-            "img": "portfolio-4.jpg"
+            "title": "Slinterland game",
+            "type": "nftgame",
+            "stacks": "React, Next.js, Node.js, PIXjs",
+            "img": "nft04.png",
+            "link": "https://splinterlands.com/"
         },
         {
             "id": "5",
-            "title": "VIP Auto Tires & Service",
-            "type": "web",
-            "stacks": "Magento",
-            "img": "portfolio-5.jpg"
+            "title": "Chain monsters MMORPG game",
+            "type": "React.js, Next.js, Node.js",
+            "stacks": "nft",
+            "img": "nft05.png",
+            "link": "https://chainmonsters.com/"
         },
         {
             "id": "6",
-            "title": "VIP Auto Tires & Service",
-            "type": "photography",
-            "stacks": "Magento",
-            "img": "portfolio-6.jpg"
+            "title": "coin hunt game",
+            "type": "nftgame",
+            "stacks": "Solidity, Ethreum, Web3 Integration",
+            "img": "nft06.png",
+            "link": "https://coinhunt.world/"
         },
         {
             "id": "7",
-            "title": "VIP Auto Tires & Service",
-            "type": "web",
-            "stacks": "Magento",
-            "img": "portfolio-7.jpg"
+            "title": "mist metaverse game",
+            "type": "nftgame",
+            "stacks": "Vue, Nuxt.js, Node.js",
+            "img": "nft07.png",
+            "link": "https://mist.game/"
         },
         {
             "id": "8",
-            "title": "VIP Auto Tires & Service",
-            "type": "ecommerce",
-            "stacks": "Magento",
-            "img": "portfolio-8.jpg"
+            "title": "Battle of Guardian Game Frontend",
+            "type": "nftgame",
+            "stacks": "Wordpress, MySql",
+            "img": "nft08.png",
+            "link": "https://battleofguardians.com/"
         },
         {
             "id": "9",
-            "title": "VIP Auto Tires & Service",
-            "type": "photography",
-            "stacks": "Magento",
-            "img": "portfolio-9.jpg"
+            "title": "Idle Cyber game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract09.png",
+            "link": "https://idlecyber.com/"
         },
         {
             "id": "10",
-            "title": "VIP Auto Tires & Service",
+            "title": "Meta wars game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract10.png",
+            "link": "https://metawars.gg/"
+        },
+        {
+            "id": "11",
+            "title": "Astro neer game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract11.png",
+            "link": "https://astroneer.space/"
+        },
+        {
+            "id": "12",
+            "title": "zoo land strategy game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract12.png",
+            "link": "https://www.zoolana.io/"
+        },
+        {
+            "id": "13",
+            "title": "Space craft game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract13.png",
+            "link": "https://spacecraftx.io/"
+        },
+        {
+            "id": "14",
+            "title": "Farmer world game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract14.png",
+            "link": "https://farmersworld.io/"
+        },
+        {
+            "id": "15",
+            "title": "NFT marketplace web",
+            "type": "smartcontract",
+            "stacks": "nft marketplace",
+            "img": "contract15.png",
+            "link": "https://www.nftically.com/"
+        },
+        {
+            "id": "16",
+            "title": "NFT marketplace web",
+            "type": "smartcontract",
+            "stacks": "nft marketplace",
+            "img": "contract16.png",
+            "link": "https://www.okex.com/"
+        },
+        {
+            "id": "17",
+            "title": "Dice card game",
+            "type": "smartcontract",
+            "stacks": "smart contract",
+            "img": "contract17.png",
+            "link": "www.primedice.com"
+        },
+        {
+            "id": "18",
+            "title": "Branding EC Site",
             "type": "ecommerce",
-            "stacks": "Magento",
-            "img": "portfolio-1.jpg"
+            "stacks": "Javascript, Canvas, Gsap, Salesforce",
+            "img": "ec01.png",
+            "link": "https://brand.shiseido.co.jp/"
+        },
+        {
+            "id": "19",
+            "title": "Branding EC Site",
+            "type": "ecommerce",
+            "stacks": "Javascript, Canvas, GSAP, Amazon S3",
+            "img": "ec02.png",
+            "link": "https://brand.finetoday.com/jp/tsubaki/"
+        },
+        {
+            "id": "20",
+            "title": "Branding EC Site",
+            "type": "ecommerce",
+            "stacks": "Javascript, Gsap, Html5, Css3",
+            "img": "ec03.png",
+            "link": "https://lamente.jp/"
+        },
+        {
+            "id": "21",
+            "title": "Branding EC Site",
+            "type": "ecommerce",
+            "stacks": "JQuery, Html5, Css, Gsap",
+            "img": "ec04.png",
+            "link": "https://larachristie.jp/"
+        },
+        {
+            "id": "22",
+            "title": "EC site using OctoberCMS",
+            "type": "ecommerce",
+            "stacks": "Laravel, OctoberCMS, React",
+            "img": "ec05.png",
+            "link": "https://ufpro.com/"
+        },
+        {
+            "id": "23",
+            "title": "Yodaka EC site with quote creation function",
+            "type": "ecommerce",
+            "stacks": "Wordpress, Java, Phpjasper",
+            "img": "ec06.png",
+            "link": "https://yodaka-giken.com/"
+        },
+        {
+            "id": "24",
+            "title": "Restaurant site with reservation function",
+            "type": "web",
+            "stacks": "Wordpress",
+            "img": "web01.png",
+            "link": "https://hamamatsu-hinokuni.com"
+        },
+        {
+            "id": "25",
+            "title": "Branding Loftgarten HP",
+            "type": "web",
+            "stacks": "Three.js, Gsap, Javascript",
+            "img": "web02.png",
+            "link": "https://www.loftgarten.co/"
+        },
+        {
+            "id": "26",
+            "title": "VAIO EC Site",
+            "type": "web",
+            "stacks": "laravel, javascript, MySql",
+            "img": "web03.png",
+            "link": "https://in.vaio.com/"
+        },
+        {
+            "id": "27",
+            "title": "Reqree Business Site",
+            "type": "web",
+            "stacks": "Wordpress, Gsap, JQuery",
+            "img": "web04.png",
+            "link": "https://reqree.co.jp"
+        },
+        {
+            "id": "28",
+            "title": "WatanabeHolding HP",
+            "type": "web",
+            "stacks": "Wordpress, Scroll.js, Gsap",
+            "img": "web08.png",
+            "link": "https://watanabehd.co.jp"
+        },
+        {
+            "id": "29",
+            "title": "Wix Site",
+            "type": "web",
+            "stacks": "wix",
+            "img": "web09.png",
+            "link": "https://www.angelcitywoodshop.com/"
+        },
+        {
+            "id": "30",
+            "title": "WoWoW HP",
+            "type": "web",
+            "stacks": "Typescript",
+            "img": "web10.png",
+            "link": "https://www.wowow.co.jp/"
+        },
+        {
+            "id": "31",
+            "title": "Health Food Restaurant",
+            "type": "web",
+            "stacks": "django",
+            "img": "web11.png",
+            "link": "https://www.valefoodco.com/"
+        },
+        {
+            "id": "32",
+            "title": "Sounkyo Onsen Sounkyo Kankou Hotel",
+            "type": "web",
+            "stacks": "django",
+            "img": "web12.png",
+            "link": "https://sounkyo-kankou.co.jp/"
+        },
+        {
+            "id": "33",
+            "title": "European-style resort in Engaru-cho, Hokkaido",
+            "type": "web",
+            "stacks": "django",
+            "img": "web13.png",
+            "link": "https://www.maure-sanso.com/"
+        },
+        {
+            "id": "34",
+            "title": "LP for a NFT release",
+            "type": "web",
+            "stacks": "React, Redux",
+            "img": "web14.png",
+            "link": "https://www.hapebeast.com/"
+        },
+        {
+            "id": "35",
+            "title": "Dapps",
+            "type": "web",
+            "stacks": "React, Next.js, Node.js, Ethereum, Polygon",
+            "img": "contract18.png",
+            "link": "https://quizdrop.net/"
+        },
+        {
+            "id": "36",
+            "title": "Kode Sports Club",
+            "type": "web",
+            "stacks": "Canvas, React, Javascript",
+            "img": "web15.png",
+            "link": "https://www.kodeclubs.com/"
+        },
+        {
+            "id": "37",
+            "title": "DJI official website",
+            "type": "web",
+            "stacks": "Next.js, Node.js, React.js",
+            "img": "ec07.png",
+            "link": "https://www.dji.com/ru"
+        },
+        {
+            "id": "38",
+            "title": "kool staking",
+            "type": "Dapps",
+            "stacks": "React, nft, smart contract",
+            "img": "nft09.png",
+            "link": "https://kool.lol/"
+        },
+        {
+            "id": "39",
+            "title": "Food Delivery Homepage",
+            "type": "web",
+            "stacks": "Vue.js, Nuxt.js, Express",
+            "img": "web16.png",
+            "link": "https://glovoapp.com/"
         }
     ]
 }
