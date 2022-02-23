@@ -1469,7 +1469,7 @@ ol {
 }
 
 .portfolio__item__video {
-  aspect-ratio: 1/0.55;
+  aspect-ratio: 1/0.5;
   display: flex;
   align-items: center;
   justify-content: center;

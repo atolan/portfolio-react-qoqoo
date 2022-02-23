@@ -26,7 +26,7 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-2.png" alt="" />
                                 </div>
-                                <h4>Scriptwriting and editing</h4>
+                                <h4>Frontend Development</h4>
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
@@ -36,7 +36,7 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-1.png" alt="" />
                                 </div>
-                                <h4>Motion graphics</h4>
+                                <h4>Backend Development</h4>
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
@@ -46,7 +46,7 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-2.png" alt="" />
                                 </div>
-                                <h4>Scriptwriting and editing</h4>
+                                <h4>NFT Development</h4>
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
@@ -56,7 +56,7 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-3.png" alt="" />
                                 </div>
-                                <h4>Video distribution</h4>
+                                <h4>Deep Learning</h4>
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
@@ -66,7 +66,7 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-4.png" alt="" />
                                 </div>
-                                <h4>Video hosting</h4>
+                                <h4>DApps Development</h4>
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
@@ -76,7 +76,7 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-4.png" alt="" />
                                 </div>
-                                <h4>Video hosting</h4>
+                                <h4>Unity Game Development</h4>
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
@@ -129,7 +129,7 @@ class Service extends React.Component {
                         </Swiper>
                     </div>
                 </div>
-                
+
             </>
         )
     }

@@ -387,6 +387,14 @@
             "stacks": "Vue.js, Nuxt.js, Express",
             "img": "web16.png",
             "link": "https://glovoapp.com/"
+        },
+        {
+            "id": "40",
+            "title": "Cellid Official Homepage",
+            "type": "web",
+            "stacks": "Wordpress, Javascript, MySql",
+            "img": "web17.png",
+            "link": "https://54.250.114.210/"
         }
     ]
 }
