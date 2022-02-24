@@ -15,16 +15,18 @@ class Footer extends Component {
                     </div>
                     <div className="footer__option">
                         <div className="footer__option__item">
-                            <h5>About us</h5>
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing.</p>
+                            <h5>About Me</h5>
+                            <p>
+                                A Passionate and Skilled Fullstack and Blockchain Developer.<br />
+                                I am confidence in Web and App Development with React, Node.js and Django.<br />
+                                Also I can help you in high-performance, secure, scalable Dapps and NFT Game Development.
+                            </p>
                             <a href="#" className="read__more">Read more <span className="arrow_right"></span></a>
                         </div>
                         <div className="footer__option__item">
                             <h5>Who we are</h5>
                             <ul>
                                 <li><NavLink to="/about">About</NavLink></li>
-                                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                                 <li><NavLink to="/service">Services</NavLink></li>
                                 <li><NavLink to="/history">History</NavLink></li>
                             </ul>
@@ -32,6 +34,7 @@ class Footer extends Component {
                         <div className="footer__option__item">
                             <h5>Our work</h5>
                             <ul>
+                                <li><NavLink to="/portfolio">Portfolio</NavLink></li>
                                 <li><NavLink to="/contact">Contact</NavLink></li>
                                 <li><a href="https://github.com/atolan" target="_blank">GitHub</a></li>
                                 
@@ -43,8 +46,7 @@ class Footer extends Component {
                             <script>
                                 document.write(new Date().getFullYear());
                             </script>
-                            All rights reserved | This template is made with <i className="fa fa-heart-o"
-                                aria-hidden="true"></i> by Colorlib
+                            All rights reserved | This portfolio is made with by Haruki Yoshino
                         </p>
                     </div>
                 </div>

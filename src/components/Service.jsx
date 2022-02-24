@@ -27,8 +27,10 @@ class Service extends React.Component {
                                     <img src="/assets/img/icons/si-2.png" alt="" />
                                 </div>
                                 <h4>Frontend Development</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
-                                    production services can put the finishing touches.</p>
+                                <p>
+                                    I'm obsessed with unique, interesting design and user-friendly functionality so hit me up with your weird artistic project ideas or app proposals.<br />
+                                    With strong knowledge of React and Vue and Redux, I can cleancode and make your site stylish and sophisticated.
+                                </p>
                             </div>
                         </div>
                         <div className="services-box">
@@ -37,8 +39,10 @@ class Service extends React.Component {
                                     <img src="/assets/img/icons/si-1.png" alt="" />
                                 </div>
                                 <h4>Backend Development</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
-                                    production services can put the finishing touches.</p>
+                                <p>
+                                    I have full skilled backend experience using Node.js and Django, Laravel.<br />
+                                    You may have noticed my backend skills in design and implementation of a high-performance, secure, backend architecture.
+                                </p>
                             </div>
                         </div>
                         <div className="services-box">
@@ -47,8 +51,10 @@ class Service extends React.Component {
                                     <img src="/assets/img/icons/si-2.png" alt="" />
                                 </div>
                                 <h4>NFT Development</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
-                                    production services can put the finishing touches.</p>
+                                <p>
+                                    With Strong understanding and experience in developing blockchain and distributed ledger technologies, smart contracts, consensus algorithms I can be responsible for Development of NFT Marketplace, Game, staking and minting site.
+                                    Main language is solidity and rust, C#.
+                                </p>
                             </div>
                         </div>
                         <div className="services-box">
@@ -56,22 +62,47 @@ class Service extends React.Component {
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-3.png" alt="" />
                                 </div>
-                                <h4>Deep Learning</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
-                                    production services can put the finishing touches.</p>
+                                <h4>Communication and Teamwork</h4>
+                                <p>
+                                    Excellent analytical, problem solving, communication, technical, multi-tasking and a motivated team player with excellent inter-personal skills
+                                </p>
                             </div>
                         </div>
+                        {/* <div className="services-box">
+                            <div className="services__item">
+                                <div className="services__item__icon">
+                                    <img src="/assets/img/icons/si-3.png" alt="" />
+                                </div>
+                                <h4>Deep Learning</h4>
+                                <p>
+                                    A Seasoned, highly skilled, and multifaceted AI professional.
+                                </p>
+                            </div>
+                        </div> */}
                         <div className="services-box">
                             <div className="services__item">
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-4.png" alt="" />
                                 </div>
                                 <h4>DApps Development</h4>
-                                <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
-                                    production services can put the finishing touches.</p>
+                                <p>
+                                    If you require a Web App or Decentralized Blockchain Application that is built efficiently and will function properly well into the future, I can develop it for you that you can easily maintain. 
+                                </p>
                             </div>
+                            
                         </div>
                         <div className="services-box">
+                            <div className="services__item">
+                                <div className="services__item__icon">
+                                    <img src="/assets/img/icons/si-4.png" alt="" />
+                                </div>
+                                <h4>Project Management</h4>
+                                <p>
+                                    Adept at managing operations and leading high-performance teams, to achieve quality results within the set deadlines, using strong motivational, advisory, technical, and communication skills.
+                                </p>
+                            </div>
+                        </div>
+                        {/* <div className="services-box">
                             <div className="services__item">
                                 <div className="services__item__icon">
                                     <img src="/assets/img/icons/si-4.png" alt="" />
@@ -80,7 +111,7 @@ class Service extends React.Component {
                                 <p>Whether you’re halfway through the editing process, or you haven’t even started, our post
                                     production services can put the finishing touches.</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
 
@@ -109,22 +140,28 @@ class Service extends React.Component {
                             }}
                         >
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/logo-1.png" alt="" /></a>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/react.svg" alt="" /></a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/logo-2.png" alt="" /></a>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/vue.svg" alt="" /></a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/logo-3.png" alt="" /></a>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/node.svg" alt="" /></a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/logo-4.png" alt="" /></a>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/laravel.svg" alt="" /></a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/logo-5.png" alt="" /></a>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/django.svg" alt="" /></a>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/logo-6.png" alt="" /></a>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/ethereum.svg" alt="" /></a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/rust.svg" alt="" /></a>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <a href="#" className="logo__item"><img src="/assets/img/logo/solidity.svg" alt="" /></a>
                             </SwiperSlide>
                         </Swiper>
                     </div>

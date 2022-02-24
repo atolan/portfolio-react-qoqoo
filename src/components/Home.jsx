@@ -99,11 +99,25 @@ class Home extends Component {
                                 <div className="col-6">
                                     <div className="services__item">
                                         <div className="services__item__icon">
+                                            <img src="/assets/img/icons/si-3.png" alt="" />
+                                        </div>
+                                        <h4>Dapps Development</h4>
+                                        <p>
+                                            Development of Decentralized Applications like NFT Marketplace, DEX, Defi and NFT Games which uses Cryptocurrencies and Smart contract with Web3.js and React, Vue.<br />
+                                            With the technology and know-how that can handle various developments, I flexibly provide what the client wants to develop.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="col-6">
+                                    <div className="services__item">
+                                        <div className="services__item__icon">
                                             <img src="/assets/img/icons/si-1.png" alt="" />
                                         </div>
-                                        <h4>DApps Developement</h4>
-                                        <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                            post production services can put the finishing touches.</p>
+                                        <h4>Website Production</h4>
+                                        <p>
+                                            Produce general websites such as corporate websites, EC websites, and landing pages. <br />
+                                            I will provide a more effective website that is close to the problems that our customers are having.
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="col-6">
@@ -111,19 +125,10 @@ class Home extends Component {
                                         <div className="services__item__icon">
                                             <img src="/assets/img/icons/si-2.png" alt="" />
                                         </div>
-                                        <h4>NFT Marketplace</h4>
-                                        <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                            post production services can put the finishing touches.</p>
-                                    </div>
-                                </div>
-                                <div className="col-6">
-                                    <div className="services__item">
-                                        <div className="services__item__icon">
-                                            <img src="/assets/img/icons/si-3.png" alt="" />
-                                        </div>
-                                        <h4>Web Site Production</h4>
-                                        <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                            post production services can put the finishing touches.</p>
+                                        <h4>App Development</h4>
+                                        <p>
+                                            I ask about problems that could not be realized with existing products and services, and I am trying to develop according to your request.
+                                        </p>
                                     </div>
                                 </div>
                                 <div className="col-6">
@@ -132,8 +137,9 @@ class Home extends Component {
                                             <img src="/assets/img/icons/si-4.png" alt="" />
                                         </div>
                                         <h4>Web System Developement</h4>
-                                        <p>Whether you’re halfway through the editing process, or you haven’t even started, our
-                                            post production services can put the finishing touches.</p>
+                                        <p>
+                                            I will develop and realize a system that "I wish there was something like this", such as communication and efficiency improvement within the company.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -153,8 +159,8 @@ class Home extends Component {
                     <section className="latest spad">
                         <div className="inner">
                             <div className="section-title center-title">
-                                <span>Our Blog</span>
-                                <h2>Blog Update</h2>
+                                {/* <span></span> */}
+                                <h2>My Works</h2>
                             </div>
                             <Swiper 
                                 className="latest__slider"
@@ -163,9 +169,6 @@ class Home extends Component {
                                 modules={[Pagination, Autoplay]}
                                 autoplay={true}
                                 loop={true}
-                                pagination={{
-                                    clickable: true,
-                                }}
                                 breakpoints={{
                                     200: {
                                         slidesPerView: 1,
@@ -179,48 +182,21 @@ class Home extends Component {
                                     },
                                 }}
                                 >
-                                <SwiperSlide>
-                                    {/* <div className="latest__slider"> */}
-                                        <div className="blog__item latest__item">
-                                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                                            <ul>
-                                                <li>Jan 03, 2020</li>
-                                                <li>05 Comment</li>
-                                            </ul>
-                                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                                cool features we were able...</p>
-                                            <a href="#">Read more <span className="arrow_right"></span></a>
-                                        </div>
-                                    {/* </div> */}
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    {/* <div className="latest__slider"> */}
-                                        <div className="blog__item latest__item">
-                                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                                            <ul>
-                                                <li>Jan 03, 2020</li>
-                                                <li>05 Comment</li>
-                                            </ul>
-                                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                                cool features we were able...</p>
-                                            <a href="#">Read more <span className="arrow_right"></span></a>
-                                        </div>
-                                    {/* </div> */}
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    {/* <div className="latest__slider"> */}
-                                        <div className="blog__item latest__item">
-                                            <h4>What Makes Users Want to Share a Video on Social Media?</h4>
-                                            <ul>
-                                                <li>Jan 03, 2020</li>
-                                                <li>05 Comment</li>
-                                            </ul>
-                                            <p>We recently launched a new website for a Vital client and wanted to share some of the
-                                                cool features we were able...</p>
-                                            <a href="#">Read more <span className="arrow_right"></span></a>
-                                        </div>
-                                    {/* </div> */}
-                                </SwiperSlide>
+                                {data.portfolios.map(portfolio => {
+                                    return (
+                                        <SwiperSlide key={portfolio.id}>
+                                            <div className="blog__item latest__item" style={{backgroundImage: `url('/assets/img/portfolio/${portfolio.img}')`}}>
+                                                <div>
+                                                    <h4>{portfolio.title}</h4>
+                                                    <ul>
+                                                        <li>{portfolio.stacks}</li>
+                                                    </ul>
+                                                    <a href={portfolio.link} target="_blank">Site View<span className="arrow_right"></span></a>
+                                                </div>
+                                            </div>
+                                        </SwiperSlide>
+                                    );
+                                })}
                             </Swiper>
                             
                         </div>
@@ -231,7 +207,6 @@ class Home extends Component {
                     <section className="callto spad set-bg" data-setbg="/assets/img/callto-bg.jpg">
                         <div className="callto__text inner">
                             <h2>Fresh Ideas, Fresh Moments Giving Wings to your Stories.</h2>
-                            <p>INC5000, Best places to work 2019</p>
                             <a href="#">Start your stories</a>
                         </div>
                     </section>

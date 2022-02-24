@@ -53,7 +53,7 @@ const Portfolio = () => {
                             data.portfolios
                                 .filter(portfolio => (portfolio.type === ptype) || (ptype ==="") )
                                 .map(portfolio => {
-                                    return(
+                                    return (
                                         <div key={portfolio.id} className="mix">
                                             <div className="portfolio__item">
                                                 <a href={ portfolio.link } target="_blank">

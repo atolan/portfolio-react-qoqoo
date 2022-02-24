@@ -26,10 +26,10 @@ const About = () => {
                 <div className="about-inner inner">
                     <div className="about__text">
                         <div className="section-title">
-                            <span>About videograph</span>
-                            <h2>Who we are?</h2>
+                            <span>Fullstack & Blockchain Developer</span>
+                            <h2>Who am I?</h2>
                         </div>
-                        <div className="about__part">
+                        {/* <div className="about__part">
                             <div className="part">
                                 <div className="services__item">
                                     <div className="services__item__icon">
@@ -48,11 +48,23 @@ const About = () => {
                                     <p>Whether you’re halfway through the editing process, or you.</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="about__text__desc">
-                            <p>Formed in 2006 by Matt Hobbs and Cael Jones, Videoprah is an award-winning, full-service
-                                production company specializing in commercial, broadcast, tourism action sport video
-                                production services has been featured.</p>
+                            <p>
+                                Just a Passionate and Skilled Fullstack & Blockchain Developer with 7 years of experience in web and 3 years in blockchain.<br /><br />
+                                My goal is to contribute my web & blockchain development expertise and customer service sales skills to your company. <br />
+                                Believe your business currently serves real people with real issues and you need a dedicated webmaster to help build your business with responsibility, accountability, and exceptional service etiquette.<br /><br />
+                                Looking for employment that utilizes my diverse business experience in Web & Blockchain Development and offers the opportunity for career advancement along with the further expansion of IT skills.
+                            </p>
+                            <h3>Educations</h3>
+                            <h5>
+                                Bachelor’s Degree, Tokyo University of Science, Tokyo
+                            </h5>
+                            <p>
+                                ・ Major in Computer Science<br />
+                                ・ Bachelor's Degree Computer Science<br />
+                                ・ GPA: 4.0
+                            </p>
                         </div>
                     </div>
                     <div className="about__pic">

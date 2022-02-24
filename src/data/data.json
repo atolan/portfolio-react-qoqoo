@@ -70,7 +70,7 @@
     "portfolios": [
         {
             "id": "0",
-            "title": "Pagasus galaxy game",
+            "title": "Snaq Me",
             "type": "web",
             "stacks": "Vue, Nuxt, Node.js, Gsap, Amazon S3",
             "img": "web00.png",
@@ -86,7 +86,7 @@
         },
         {
             "id": "2",
-            "title": "fantasy game ",
+            "title": "Fantasy Game",
             "type": "nftgame",
             "stacks": "Ethreum, Rust, React",
             "img": "nft02.png",
@@ -94,7 +94,7 @@
         },
         {
             "id": "3",
-            "title": "blankos block party game",
+            "title": "Blankos Block Party Game",
             "type": "nftgame",
             "stacks": "React, Next.js, Node.js",
             "img": "nft03.png",
@@ -102,7 +102,7 @@
         },
         {
             "id": "4",
-            "title": "Slinterland game",
+            "title": "Slinterland Game",
             "type": "nftgame",
             "stacks": "React, Next.js, Node.js, PIXjs",
             "img": "nft04.png",
@@ -110,7 +110,7 @@
         },
         {
             "id": "5",
-            "title": "Chain monsters MMORPG game",
+            "title": "Chain Monsters MMORPG Game",
             "type": "React.js, Next.js, Node.js",
             "stacks": "nft",
             "img": "nft05.png",
@@ -118,7 +118,7 @@
         },
         {
             "id": "6",
-            "title": "coin hunt game",
+            "title": "Coin Hunt Game",
             "type": "nftgame",
             "stacks": "Solidity, Ethreum, Web3 Integration",
             "img": "nft06.png",
@@ -126,7 +126,7 @@
         },
         {
             "id": "7",
-            "title": "mist metaverse game",
+            "title": "Mist Metaverse Game",
             "type": "nftgame",
             "stacks": "Vue, Nuxt.js, Node.js",
             "img": "nft07.png",
@@ -142,23 +142,23 @@
         },
         {
             "id": "9",
-            "title": "Idle Cyber game",
+            "title": "Idle Cyber Game",
             "type": "smartcontract",
-            "stacks": "smart contract",
+            "stacks": "Solidity, Wordpress, Web3",
             "img": "contract09.png",
             "link": "https://idlecyber.com/"
         },
         {
             "id": "10",
-            "title": "Meta wars game",
+            "title": "Meta Wars Game",
             "type": "smartcontract",
-            "stacks": "smart contract",
+            "stacks": "NFT staking, Presale contract",
             "img": "contract10.png",
             "link": "https://metawars.gg/"
         },
         {
             "id": "11",
-            "title": "Astro neer game",
+            "title": "Astro Neer Game",
             "type": "smartcontract",
             "stacks": "smart contract",
             "img": "contract11.png",
@@ -166,7 +166,7 @@
         },
         {
             "id": "12",
-            "title": "zoo land strategy game",
+            "title": "Zoo Land Strategy Game",
             "type": "smartcontract",
             "stacks": "smart contract",
             "img": "contract12.png",
@@ -174,7 +174,7 @@
         },
         {
             "id": "13",
-            "title": "Space craft game",
+            "title": "Space Craft Game",
             "type": "smartcontract",
             "stacks": "smart contract",
             "img": "contract13.png",
@@ -182,7 +182,7 @@
         },
         {
             "id": "14",
-            "title": "Farmer world game",
+            "title": "Farmer World Game",
             "type": "smartcontract",
             "stacks": "smart contract",
             "img": "contract14.png",
@@ -190,7 +190,7 @@
         },
         {
             "id": "15",
-            "title": "NFT marketplace web",
+            "title": "NFT Marketplace Web",
             "type": "smartcontract",
             "stacks": "nft marketplace",
             "img": "contract15.png",
@@ -198,7 +198,7 @@
         },
         {
             "id": "16",
-            "title": "NFT marketplace web",
+            "title": "NFT Marketplace Web",
             "type": "smartcontract",
             "stacks": "nft marketplace",
             "img": "contract16.png",
@@ -206,7 +206,7 @@
         },
         {
             "id": "17",
-            "title": "Dice card game",
+            "title": "Dice Card Game",
             "type": "smartcontract",
             "stacks": "smart contract",
             "img": "contract17.png",
@@ -374,7 +374,7 @@
         },
         {
             "id": "38",
-            "title": "kool staking",
+            "title": "Kool Staking Site",
             "type": "Dapps",
             "stacks": "React, nft, smart contract",
             "img": "nft09.png",
