@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import Breadcrumb from '../layout/Breadcrumb';
+import WaterWave from 'react-water-wave';
+import Background from "/assets/img/testimonial-bg.jpg";
 
 import data from '../data/data.json';
 
@@ -114,177 +116,195 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <WaterWave
+                style={{
+                    paddingTop: "100px",
+                    paddingBottom: "30px",
+                    backgroundSize: "cover",
+                    overflow: "hidden",
+                    background: `url(${Background}) no-repeat top center`
+                  }}
+                  dropRadius={20}
+                  perturbance={0.01}
+                  interactive={true}
+            >
+                {() => {
+                    return(
+                        <>
+                            <div className="section-title center-title">
+                                <span>Loved By Clients</span>
+                                <h2>What clients say?</h2>
+                            </div>
+                            <div className="testimonial__slider inner">
 
-            <section className="testimonial spad set-bg" data-setbg="/assets/img/testimonial-bg.jpg">
-                <div className="section-title center-title">
-                    <span>Loved By Clients</span>
-                    <h2>What clients say?</h2>
-                </div>
-                <div className="testimonial__slider inner">
-
-                    <Swiper 
-                        className="testimonial__slider"
-                        spaceBetween={15}
-                        slidesPerView={3}
-                        modules={[Pagination, Autoplay]}
-                        autoplay={true}
-                        loop={true}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        breakpoints={{
-                            200: {
-                                slidesPerView: 1,
-                            },
-                            768: {
-                                slidesPerView: 2,
-                                spaceBetween: 20,
-                            },
-                            992: {
-                                slidesPerView: 3,
-                            },
-                        }}
-                        >
-                        <SwiperSlide>
-                            <div className="testimonial__item">
-                                <div className="testimonial__text">
-                                    <p>
-                                        お仕事内容も的確に指示していただき、スムーズに作業ができました。メッセージの返信も早く、契約からお支払いまで、敏速にご対応頂けました。今後も一緒にお仕事をさせていただきたい信頼できるクライアントさんでした。修正指示も非常に親切でした。プロジェクトをより迅速に、完全に実行していなかったのが残念です。これから良い縁になることを希望します。次の機会には、品質を確保するために最善を尽くいたします。ありがとうございました。
-                                    </p>
-                                </div>
-                                <div className="testimonial__author">
-                                    <div className="testimonial__author__pic">
-                                        <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
-                                    </div>
-                                    <div className="testimonial__author__text">
-                                        <h5>山口博美</h5>
-                                        <span>Photographer</span>
-                                    </div>
-                                </div>
+                                <Swiper 
+                                    className="testimonial__slider"
+                                    spaceBetween={15}
+                                    slidesPerView={3}
+                                    modules={[Pagination, Autoplay]}
+                                    autoplay={true}
+                                    loop={true}
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    breakpoints={{
+                                        200: {
+                                            slidesPerView: 1,
+                                        },
+                                        768: {
+                                            slidesPerView: 2,
+                                            spaceBetween: 20,
+                                        },
+                                        992: {
+                                            slidesPerView: 3,
+                                        },
+                                    }}
+                                    >
+                                    <SwiperSlide>
+                                        <div className="testimonial__item">
+                                            <div className="testimonial__text">
+                                                <p>
+                                                    お仕事内容も的確に指示していただき、スムーズに作業ができました。メッセージの返信も早く、契約からお支払いまで、敏速にご対応頂けました。今後も一緒にお仕事をさせていただきたい信頼できるクライアントさんでした。修正指示も非常に親切でした。プロジェクトをより迅速に、完全に実行していなかったのが残念です。これから良い縁になることを希望します。次の機会には、品質を確保するために最善を尽くいたします。ありがとうございました。
+                                                </p>
+                                            </div>
+                                            <div className="testimonial__author">
+                                                <div className="testimonial__author__pic">
+                                                    <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
+                                                </div>
+                                                <div className="testimonial__author__text">
+                                                    <h5>山口博美</h5>
+                                                    <span>Photographer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="testimonial__item">
+                                            <div className="testimonial__text">
+                                                <p>
+                                                    {/* この度は誠にありがとうございました。
+                                                    とてもいいホームページが完成してとても満足です。
+                                                    細かい指定にも柔軟に対応して頂き感謝致します。
+                                                    また機会ございましたらよろしくお願い致します。 */}
+                                                    Thank you very much for this time.<br />
+                                                    Very happy that a very good homepage has been completed.
+                                                    Thank you for your flexibility in responding to detailed specifications.<br />
+                                                    If you have another chance, thank you.
+                                                </p>
+                                            </div>
+                                            <div className="testimonial__author">
+                                                <div className="testimonial__author__pic">
+                                                    <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
+                                                </div>
+                                                <div className="testimonial__author__text">
+                                                    <h5>Zechariah Beer</h5>
+                                                    <span>Individual Store Manager</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="testimonial__item">
+                                            <div className="testimonial__text">
+                                                <p>
+                                                    {/* 納期に関しまして遅れたのですが、その後のやり取りで丁寧に対応していただき、修正も問題なくおこなっていただきました。
+                                                    ありがとうございます。
+                                                    納期に関してが不安でしたが、納期を守っていただける上てあれば再度依頼したいと考えております。 */}
+                                                    Although the delivery date was delayed, I received a polite response in the subsequent exchanges and made corrections without any problems.<br />
+                                                    Thank you very much.<br />
+                                                    I was worried about the delivery date, but I would like to request it again if I can meet the delivery date.
+                                                </p>
+                                            </div>
+                                            <div className="testimonial__author">
+                                                <div className="testimonial__author__pic">
+                                                    <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
+                                                </div>
+                                                <div className="testimonial__author__text">
+                                                    <h5>Tomoya Miyazawa</h5>
+                                                    <span>Individual entrepreneur</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="testimonial__item">
+                                            <div className="testimonial__text">
+                                                <p>
+                                                {/* 素晴らしいランサーさんです。
+                                                お手軽な料金設定に加えて、レスポンスの速さ、納品物のクオリティ、どれをとっても大満足です。
+                                                今後とも長くお付き合いさせていただければと思います。 */}
+                                                    A wonderful freelancer.<br />
+                                                    In addition to easy pricing, very satisfied with the speed of response and the quality of the deliverables.<br />
+                                                    I hope to continue to be with you for a long time.
+                                                </p>
+                                            </div>
+                                            <div className="testimonial__author">
+                                                <div className="testimonial__author__pic">
+                                                    <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
+                                                </div>
+                                                <div className="testimonial__author__text">
+                                                    <h5>Lenny Rosenbaum</h5>
+                                                    <span>Web Developer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="testimonial__item">
+                                            <div className="testimonial__text">
+                                                <p>
+                                                    {/* 驚くほど仕事のできる方です。
+                                                    こちらの仕様書から更に良くなるように提案していただいたり、納期も前倒しで収めていただきました。
+                                                    デザインも一級品ですので安心して仕事をお願いできました。
+                                                    是非次回もよろしくお願いします！ */}
+                                                    A person who can work surprisingly.<br />
+                                                    From this specification, I asked you to make a suggestion to make it even better, and I also received the delivery date ahead of schedule.<br />
+                                                    The design is also first-class, so I was able to ask for work with confidence.
+                                                    I look forward to working with you next time!
+                                                </p>
+                                            </div>
+                                            <div className="testimonial__author">
+                                                <div className="testimonial__author__pic">
+                                                    <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
+                                                </div>
+                                                <div className="testimonial__author__text">
+                                                    <h5>Megane Kirlin</h5>
+                                                    <span>AI-related business owners</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="testimonial__item">
+                                            <div className="testimonial__text">
+                                                <p>
+                                                    {/* とても細かく連絡を取り合うことができました。
+                                                    また、都度発生したこちらの変更等の要望に対して丁寧に対応してくださりました。非常に信頼できるワーカー様です。
+                                                    今後ともよろしくお願いいたします。 */}
+                                                    I was able to keep in touch with them in great detail.<br />
+                                                    In addition, he politely responded to requests such as changes that occurred each time. A very reliable worker.<br />
+                                                    I look forward to working with you in the future.
+                                                </p>
+                                            </div>
+                                            <div className="testimonial__author">
+                                                <div className="testimonial__author__pic">
+                                                    <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
+                                                </div>
+                                                <div className="testimonial__author__text">
+                                                    <h5>Maeda</h5>
+                                                    <span>IT consultant</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                </Swiper>
                             </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testimonial__item">
-                                <div className="testimonial__text">
-                                    <p>
-                                        {/* この度は誠にありがとうございました。
-                                        とてもいいホームページが完成してとても満足です。
-                                        細かい指定にも柔軟に対応して頂き感謝致します。
-                                        また機会ございましたらよろしくお願い致します。 */}
-                                        Thank you very much for this time.<br />
-                                        Very happy that a very good homepage has been completed.
-                                        Thank you for your flexibility in responding to detailed specifications.<br />
-                                        If you have another chance, thank you.
-                                    </p>
-                                </div>
-                                <div className="testimonial__author">
-                                    <div className="testimonial__author__pic">
-                                        <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
-                                    </div>
-                                    <div className="testimonial__author__text">
-                                        <h5>Zechariah Beer</h5>
-                                        <span>Individual Store Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testimonial__item">
-                                <div className="testimonial__text">
-                                    <p>
-                                        {/* 納期に関しまして遅れたのですが、その後のやり取りで丁寧に対応していただき、修正も問題なくおこなっていただきました。
-                                        ありがとうございます。
-                                        納期に関してが不安でしたが、納期を守っていただける上てあれば再度依頼したいと考えております。 */}
-                                        Although the delivery date was delayed, I received a polite response in the subsequent exchanges and made corrections without any problems.<br />
-                                        Thank you very much.<br />
-                                        I was worried about the delivery date, but I would like to request it again if I can meet the delivery date.
-                                    </p>
-                                </div>
-                                <div className="testimonial__author">
-                                    <div className="testimonial__author__pic">
-                                        <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
-                                    </div>
-                                    <div className="testimonial__author__text">
-                                        <h5>Tomoya Miyazawa</h5>
-                                        <span>Individual entrepreneur</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testimonial__item">
-                                <div className="testimonial__text">
-                                    <p>
-                                    {/* 素晴らしいランサーさんです。
-                                    お手軽な料金設定に加えて、レスポンスの速さ、納品物のクオリティ、どれをとっても大満足です。
-                                    今後とも長くお付き合いさせていただければと思います。 */}
-                                        A wonderful freelancer.<br />
-                                        In addition to easy pricing, very satisfied with the speed of response and the quality of the deliverables.<br />
-                                        I hope to continue to be with you for a long time.
-                                    </p>
-                                </div>
-                                <div className="testimonial__author">
-                                    <div className="testimonial__author__pic">
-                                        <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
-                                    </div>
-                                    <div className="testimonial__author__text">
-                                        <h5>Lenny Rosenbaum</h5>
-                                        <span>Web Developer</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testimonial__item">
-                                <div className="testimonial__text">
-                                    <p>
-                                        {/* 驚くほど仕事のできる方です。
-                                        こちらの仕様書から更に良くなるように提案していただいたり、納期も前倒しで収めていただきました。
-                                        デザインも一級品ですので安心して仕事をお願いできました。
-                                        是非次回もよろしくお願いします！ */}
-                                        A person who can work surprisingly.<br />
-                                        From this specification, I asked you to make a suggestion to make it even better, and I also received the delivery date ahead of schedule.<br />
-                                        The design is also first-class, so I was able to ask for work with confidence.
-                                        I look forward to working with you next time!
-                                    </p>
-                                </div>
-                                <div className="testimonial__author">
-                                    <div className="testimonial__author__pic">
-                                        <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
-                                    </div>
-                                    <div className="testimonial__author__text">
-                                        <h5>Megane Kirlin</h5>
-                                        <span>AI-related business owners</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="testimonial__item">
-                                <div className="testimonial__text">
-                                    <p>
-                                        {/* とても細かく連絡を取り合うことができました。
-                                        また、都度発生したこちらの変更等の要望に対して丁寧に対応してくださりました。非常に信頼できるワーカー様です。
-                                        今後ともよろしくお願いいたします。 */}
-                                        I was able to keep in touch with them in great detail.<br />
-                                        In addition, he politely responded to requests such as changes that occurred each time. A very reliable worker.<br />
-                                        I look forward to working with you in the future.
-                                    </p>
-                                </div>
-                                <div className="testimonial__author">
-                                    <div className="testimonial__author__pic">
-                                        <img src="/assets/img/testimonial/ta-1.jpg" alt="" />
-                                    </div>
-                                    <div className="testimonial__author__text">
-                                        <h5>Maeda</h5>
-                                        <span>IT consultant</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    </Swiper>
-                </div>
-            </section>
+                        </>
+                    )
+                } 
+                }
+            </WaterWave>
+            
         </>
     )
 }
