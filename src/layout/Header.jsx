@@ -42,7 +42,7 @@ class Header extends Component {
                             <li className={this.state.tab==2?"active":""} ><NavLink onClick={()=>{this.setState({tab:2})}} to="/about">About</NavLink></li>
                             <li className={this.state.tab==3?"active":""} ><NavLink onClick={()=>{this.setState({tab:3})}} to="/portfolio">Portfolio</NavLink></li>
                             <li className={this.state.tab==4?"active":""} ><NavLink onClick={()=>{this.setState({tab:4})}} to="/service">Services</NavLink></li>
-                            <li className={this.state.tab==5?"active":""} ><NavLink onClick={()=>{this.setState({tab:5})}} to="/history">History</NavLink></li>
+                            {/* <li className={this.state.tab==5?"active":""} ><NavLink onClick={()=>{this.setState({tab:5})}} to="/history">History</NavLink></li> */}
                             <li className={this.state.tab==6?"active":""} ><NavLink onClick={()=>{this.setState({tab:6})}} to="/contact">Contact</NavLink></li>
                         </ul>
                     </nav>

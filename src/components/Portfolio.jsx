@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Breadcrumb from '../layout/Breadcrumb';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
-
 import data from '../data/data.json';
 
 const Portfolio = () => {
@@ -58,7 +53,6 @@ const Portfolio = () => {
                                             <div className="portfolio__item">
                                                 <a href={ portfolio.link } target="_blank">
                                                     <div className="portfolio__item__video set-bg" data-setbg={`/assets/img/portfolio/${ portfolio.img }`}>
-                                                    {/* <div className="portfolio__item__video set-bg" data-setbg={`/assets/img/portfolio/${ portfolio.img }`}> */}
                                                     </div>
                                                     <div className="portfolio__item__text">
                                                         <h4>{ portfolio.title }</h4>
@@ -69,7 +63,7 @@ const Portfolio = () => {
                                                 </a>
                                             </div>
                                         </div>
-                                    )
+                                    );
                                     
                                 })
                         }

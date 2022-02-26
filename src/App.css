@@ -811,11 +811,6 @@ ol {
 .blog__item.latest__item {
   margin-bottom: 0;
 }
-/* .blog__item.latest__item:hover {
-  border: 1px solid #222222 !important;
-  background: url(/assets/img/blog-1.jpg);
-  background-size: cover;
-} */
 
 .latest__slider.owl-carousel .owl-item .col-lg-4 {
   max-width: 100%;
@@ -1166,6 +1161,10 @@ ol {
 .about__pic img {
   width: 100%;
 }
+.about__history {
+  color: white;
+}
+
 @media (max-width: 992px) {
   .about__pic {
     width: 100%;
@@ -1174,7 +1173,10 @@ ol {
 
 .about__text {
   width: 48%;
-  padding-left: 30px;
+  /* padding-left: 30px; */
+}
+.about__text .primary-btn {
+  margin: 1em 0;
 }
 @media (max-width: 992px) {
   .about__text {
@@ -1200,10 +1202,18 @@ ol {
   color: white;
 }
 
-.about__text__desc h3, .about__text__desc h5 {
-  margin: 0.3em 0;
+.about__edu, .about__history {
+  margin: 2em 0 0;
+}
+
+.about__edu h3, .about__edu h5 {
+  margin: 0.5em 0;
+  color: white;
 } 
 
+.about__edu h5 {
+  margin-top: 1.5em;
+}
 /*---------------------
   Testimonial
 -----------------------*/
@@ -1215,29 +1225,8 @@ ol {
   padding-bottom: 30px;
 }
 
-/* .testimonial__slider.owl-carousel .owl-item .col-lg-4 {
-  max-width: 100%;
-}
-.testimonial__slider.owl-carousel .owl-dots {
-  text-align: center;
-  padding-top: 35px;
-}
-.testimonial__slider.owl-carousel .owl-dots button {
-  height: 8px;
-  width: 8px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.testimonial__slider.owl-carousel .owl-dots button.active {
-  background: #00bfe7;
-}
-.testimonial__slider.owl-carousel .owl-dots button:last-child {
-  margin-right: 0;
-} */
-
 .testimonial__text {
-  padding: 30px 40px 25px 30px;
+  padding: 25px;
   border: 1px solid #3D3A64;
   margin-bottom: 25px;
   position: relative;
@@ -1245,10 +1234,10 @@ ol {
 }
 .testimonial__text P {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   font-style: italic;
-  line-height: 30px;
+  line-height: 1.5;
   margin-bottom: 0;
 }
 
@@ -1413,12 +1402,25 @@ ol {
   padding: 100px 20px;
 }
 
+@media (max-width: 767px) {
+  .logo {
+    padding: 40px 20px;
+  }
+}
+
 .logo__carousel .logo__item img {
   width: auto;
   display: block;
   margin: auto;
   height: 70px;
 }
+.logo__item p {
+  color: white;
+  text-align: center;
+  margin: 1em;
+  font-size: 18px;
+}
+
 
 /*---------------------
   Portfolio

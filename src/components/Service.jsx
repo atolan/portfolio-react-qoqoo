@@ -140,28 +140,28 @@ class Service extends React.Component {
                             }}
                         >
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/react.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/react.svg" alt="" /><p>React.js</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/vue.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/vue.svg" alt="" /><p>Vue.js</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/node.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/node.svg" alt="" /><p>Node.js</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/laravel.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/laravel.svg" alt="" /><p>Laravel</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/django.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/django.svg" alt="" /><p>Django</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/ethereum.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/ethereum.svg" alt="" /><p>Ethereum</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/rust.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/rust.svg" alt="" /><p>Rust</p></div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <a href="#" className="logo__item"><img src="/assets/img/logo/solidity.svg" alt="" /></a>
+                                <div className="logo__item"><img src="/assets/img/logo/solidity.svg" alt="" /><p>Solidity</p></div>
                             </SwiperSlide>
                         </Swiper>
                     </div>
