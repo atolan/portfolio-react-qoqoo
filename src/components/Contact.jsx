@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Breadcrumb from '../layout/Breadcrumb';
-
+import Preloader from '../layout/Preloader';
 
 class Contact extends React.Component {
 
@@ -31,12 +31,19 @@ class Contact extends React.Component {
         })
     }
 
+    componentDidMount() {
+        setTimeout(() => {
+            document.querySelector('.preloader').style.display = "none";  
+        }, 1000);
+    }
+
     render() {
 
         const {name, email, message} = this.state;
 
         return(
             <>
+                <Preloader />
                 <Breadcrumb label="Contact Me" pageTitle="Contact"/>
     
                 <section className="contact-widget spad">

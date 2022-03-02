@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Breadcrumb from '../layout/Breadcrumb';
+import Preloader from '../layout/Preloader';
 
 import data from '../data/data.json';
 
@@ -11,10 +12,15 @@ const History = () => {
             var bg = elem.getAttribute('data-setbg');
             elem.style.backgroundImage = 'url(' + bg + ')';
         });
+
+        setTimeout(() => {
+            document.querySelector('.preloader').style.display = "none";  
+        }, 1000);
     });
 
     return(
         <>
+            <Preloader />
             <Breadcrumb label="My History" pageTitle="History"/>
             <div className="history">
                 <div className="history-edu inner">

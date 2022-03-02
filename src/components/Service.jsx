@@ -2,6 +2,7 @@ import React from 'react';
 
 import Footer from '../layout/Footer';
 import Breadcrumb from '../layout/Breadcrumb';
+import Preloader from '../layout/Preloader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -13,11 +14,17 @@ class Service extends React.Component {
         super();
     }
 
+    componentDidMount() {
+        setTimeout(() => {
+            document.querySelector('.preloader').style.display = "none";  
+        }, 1000);
+    }
+
     render() {
 
         return(
             <>
-               
+                <Preloader />
                 <Breadcrumb label="My Services" pageTitle="Service"></Breadcrumb>
                 <section className="services spad">
                     <div className="spad-inner inner">

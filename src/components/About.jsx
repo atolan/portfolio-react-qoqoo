@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import Breadcrumb from '../layout/Breadcrumb';
+import Preloader from '../layout/Preloader';
 import WaterWave from 'react-water-wave';
 import Background from "/assets/img/testimonial-bg.jpg";
 
 import data from '../data/data.json';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper';
+import { Autoplay, Pagination, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+// import 'swiper/css/navigation';
 
 const About = () => {
 
@@ -18,10 +20,15 @@ const About = () => {
             var bg = elem.getAttribute('data-setbg');
             elem.style.backgroundImage = 'url(' + bg + ')';
         });
+
+        setTimeout(() => {
+            document.querySelector('.preloader').style.display = "none";  
+        }, 1000);
     });
 
     return(
         <>
+            <Preloader />
             <Breadcrumb label="About Me" pageTitle="About"/>
 
             <section className="about spad">
@@ -119,8 +126,8 @@ const About = () => {
             <WaterWave
                 style={{
                     paddingTop: "100px",
-                    paddingBottom: "30px",
-                    backgroundSize: "cover",
+                    paddingBottom: "50px",
+                    backgroundSize: "contain",
                     overflow: "hidden",
                     background: `url(${Background}) no-repeat top center`
                   }}
@@ -141,9 +148,10 @@ const About = () => {
                                     className="testimonial__slider"
                                     spaceBetween={15}
                                     slidesPerView={3}
-                                    modules={[Pagination, Autoplay]}
+                                    modules={[Pagination, Navigation, Autoplay]}
                                     autoplay={true}
                                     loop={true}
+                                    // navigation
                                     pagination={{
                                         clickable: true,
                                     }}
@@ -297,6 +305,10 @@ const About = () => {
                                             </div>
                                         </div>
                                     </SwiperSlide>
+                                    {/* AI、OpenCV、TensorFlow、keras、MNIST、scipyを使用して画像処理を行っています。
+                                    サッカー試合分析ウェブシステム、ロボット視覚システムの開発、スズメ種類識別、競馬分析、筆記体認識などを行いました。
+                                    深層学習は基本的にRoboflow、kaggle、Google Colabを利用して行われました。
+                                    現在はyolov5を多く利用しています。 */}
                                 </Swiper>
                             </div>
                         </>

@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Count from './Count';
+import Preloader from '../layout/Preloader';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade, Pagination } from 'swiper';
@@ -24,6 +25,10 @@ class Home extends Component {
             elem.style.backgroundImage = 'url(' + bg + ')';
         });
 
+        setTimeout(() => {
+            document.querySelector('.preloader').style.display = "none";  
+        }, 1000);
+
     }
 
     render()
@@ -33,6 +38,7 @@ class Home extends Component {
                 {/* <Header /> */}
                 <main>
                     {/* <!-- Hero Section Begin --> */}
+                    <Preloader />
                     <section className="hero">
                         <Swiper 
                             className="hero__slider"

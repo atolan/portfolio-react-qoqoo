@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Breadcrumb from '../layout/Breadcrumb';
+import Preloader from '../layout/Preloader';
+import { connect } from 'react-redux';
 
 import data from '../data/data.json';
+
+// const mapStateToProps = state => {
+//     return { ptype: state.ptype };
+// };
 
 const Portfolio = () => {
 
@@ -13,6 +19,10 @@ const Portfolio = () => {
             var bg = elem.getAttribute('data-setbg');
             elem.style.backgroundImage = 'url(' + bg + ')';
         });
+
+        setTimeout(() => {
+            document.querySelector('.preloader').style.display = "none";  
+        }, 1000);
 
     });
 
@@ -29,7 +39,7 @@ const Portfolio = () => {
     return(
         <>
             {/* <Header /> */}
-
+            <Preloader />
             <Breadcrumb label="Portfolio" pageTitle="Portfolio"/>
 
             <section className="portfolio spad">
@@ -80,5 +90,7 @@ const Portfolio = () => {
         </>
     )
 }
+
+// const Porfolio = connect(mapStateToProps)(ConnectedPortfolio);
 
 export default Portfolio;

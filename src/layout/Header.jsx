@@ -15,10 +15,7 @@ class Header extends Component {
   // const increment = () => dispatch(actions.increment())
   // ...
 
-  // componentDidMount() {
-  //   $(".loader").fadeOut();
-  //   $("#preloder").delay(200).fadeOut("slow");
-  // }
+  
 
   render() {
 
@@ -27,7 +24,6 @@ class Header extends Component {
         {/* <div id="preloder">
             <div className="loader"></div>
         </div> */}
-
         <header className="header">
             <div className="header-inner inner">
                 <div className="header__logo">

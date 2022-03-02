@@ -3,7 +3,8 @@ import { ADD_PORTFOLIO } from "../constannts/actionTypes";
 
 const initialState = {
     portfolios: data.portfolios,
-    menu: "home"
+    menu: "home",
+    ptype: "all"
 };
 
 function rootReducer(state = initialState, action) {
